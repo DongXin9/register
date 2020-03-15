@@ -1,0 +1,23 @@
+{
+  "name": "register",
+  "version": "1.0.0",
+  "description": "注册",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DongXin9/register.git"
+  },
+  "keywords": [],
+  "author": "DongXin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DongXin9/register/issues"
+  },
+  "homepage": "https://github.com/DongXin9/register#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

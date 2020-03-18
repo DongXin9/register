@@ -7,16 +7,16 @@ $(function(){
         $send = $('#TANGRAM__PSP_4__verifyCodeSend');
   $submit.click(function(){
     if(!validateName('#TANGRAM__PSP_4__userName')) {
-      $('#TANGRAM__PSP_4__userName').select();
+      $userName.select();
       return false;
     }else if(!validate('#TANGRAM__PSP_4__phone')){
-      $('#TANGRAM__PSP_4__phone').select();
+      $phone.select();
       return false;
     }else if(!validate('#TANGRAM__PSP_4__password')){
-      $('#TANGRAM__PSP_4__password').select();
+      $password.select();
       return false;
     }else if(!validate('#TANGRAM__PSP_4__verifyCode')){
-      $('TANGRAM__PSP_4__verifyCode').select();
+      $code.select();
       return false;
     }else{
       alert('表单已提交');
@@ -28,7 +28,7 @@ $(function(){
         i = 60,
         timer;
     if(!validate('#TANGRAM__PSP_4__phone')){
-        $('#TANGRAM__PSP_4__phone').select();
+       $phone.select();
         return false;
     }
     timer = setInterval(function(){
@@ -41,8 +41,7 @@ $(function(){
       }else{
         $btn.val('重发验证（'+i+'s）');
         $btn.attr('disabled','disabled');
-        $btn.attr('class','');
-        $btn.css({'width':'126px','border-radius': '4px','background': '#fff','border': '1px solid #E0E0E0','font-size': '12px','color': '#333','letter-spacing': '0','text-align': 'center','line-height': '24px','height':'40px'});
+        $btn.attr('class','waitbutton');
       }
     },1000);
   });
